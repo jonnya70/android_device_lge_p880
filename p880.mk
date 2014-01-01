@@ -125,4 +125,6 @@ PRODUCT_DEVICE := p880
 PRODUCT_MODEL := LG-P880
 PRODUCT_MANUFACTURER := LGE
 
+# Use common BCM stuff
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
